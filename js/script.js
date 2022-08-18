@@ -11,6 +11,5 @@ let personalMovieDB = {
 let firstQuestion = prompt("Один из последних просмотренных фильмов?");
 let firstQuestionScore = prompt("Насколько оцените его?");
 
-personalMovieDB.movies = {
-  firstQuestion: firstQuestionScore,
-};
+personalMovieDB.movies[firstQuestion] = firstQuestionScore;
+console.log(personalMovieDB);
